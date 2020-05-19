@@ -70,7 +70,7 @@ function step_1(inputs, latches) {
     var x6 = !x5;
     var x7 = !x3;
 
-    outputs["bbb05df7-998a-11ea-adb4-afcccd2c8261"] = x6;
+    outputs["sat"] = x6;
     latch_outs["bbb05df3-998a-11ea-adb4-afcccd2c8261"] = x7;
     latch_outs["bbb05df1-998a-11ea-adb4-afcccd2c8261"] = x4;
 
@@ -87,5 +87,5 @@ console.log(spec_1([{"x": true, "y": true}, {"x": true, "y": false}]))
 
 yields:
 ```javascript
-{ 'bbb05df7-998a-11ea-adb4-afcccd2c8261': true }
+{ 'sat': true }
 ```
